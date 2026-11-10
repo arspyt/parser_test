@@ -1,4 +1,4 @@
-# conrad.de parser (Balluff)
+# Parser
 
 Scrapes Balluff product pages from [conrad.de](https://www.conrad.de/de/marken/balluff.html)
 into a CSV file. The browser is real Google Chrome driven by
