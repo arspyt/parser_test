@@ -1,0 +1,13 @@
+.env
+.git
+.ruff_cache
+.pytest_cache
+**/__pycache__
+venv
+.venv
+profile
+debug
+output
+recording
+graphify-out
+*.csv

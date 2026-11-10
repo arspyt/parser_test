@@ -1,0 +1,11 @@
+.env
+venv/
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+profile/
+debug/
+output/
+recording/
+*.csv

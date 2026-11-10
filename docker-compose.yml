@@ -1,0 +1,19 @@
+services:
+  parser:
+    build: .
+    image: conrad-parser
+    # Google Chrome for Linux is amd64-only (runs under emulation on Apple Silicon)
+    platform: linux/amd64
+    env_file:
+      - path: .env
+        required: false
+    init: true
+    shm_size: 1gb
+    volumes:
+      - ./output:/app/output
+      - ./debug:/app/debug
+      - chrome-profile:/app/profile
+    command: ["--limit", "100", "--out", "output/balluff.csv"]
+
+volumes:
+  chrome-profile:
